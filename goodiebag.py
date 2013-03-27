@@ -9,4 +9,5 @@ def iso_to_date(date):
     datetime
     '''
     date_chunks = date.split('-')
-    return datetime.date(date_chunks[0], date_chunks[1], date_chunks[2])
+    return datetime.date(int(date_chunks[0]), int(date_chunks[1]),
+                         int(date_chunks[2]))
